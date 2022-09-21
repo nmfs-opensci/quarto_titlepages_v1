@@ -15,7 +15,14 @@ editor: source
 format:
   pdf:
     documentclass: scrbook
-    classoption: ["onepage", "openany"]
+    classoption: ["openany"]
+    keep-tex: true
+    hyperrefoptions: 
+      - "colorlinks=true"
+      - "linkcolor=blue"
+      - "urlcolor=cyan"
+    geometry:
+      - "margin=1.5in"
     number-sections: true
     template-partials:
       - "before-body.tex"
@@ -31,11 +38,20 @@ format:
       - bottom=0in
       - right=1in
       - left=1in
-    title-bg-image: "images/The_Great_Wave_off_Kanagawa.jpeg"
+    title-bg-image: "images/TheGreatWaveoffKanagawa.jpeg"
     title-page-color: "F6D5A8"
+    linkcolor: blue
+    urlcolor: cyan
 
 bibliography: references.bib
 ---
+
+# Notes on great-wave
+
+* classoptions `openany` (allows chapters to start on even or odd pages) and `onepage` (same margins on even and odd pages) do not work together. If you set `openany`, then `onepage` is ignored. So set `openany` as class option and then set geometry so that all pages have the same geometry (meaning margins). The code in `_coverpage.tex` will set its own geometry for the cover page.
+* filenames with `_` don't work across all operating systems. I always forget what symbols are bad in what operating system so I try to have no symbols in included image file names.
+* Use `titlepage-geometry: ` to move your title around so it doesn't overlap your image.
+* Use `titlepage-color` to get a background color that matches the image and gets a nice fade.
 
 # Introduction
 
@@ -66,7 +82,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque ex, veh
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque ex, vehicula dictum risus fermentum, feugiat faucibus neque. Etiam purus quam, lacinia vel porta in, malesuada ac nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed bibendum placerat tellus, ac finibus lectus euismod eget. Nulla mattis diam vitae bibendum consequat.
 
-![great wave](images/The_Great_Wave_off_Kanagawa.jpeg){#fig-wave}
+![great wave](images/TheGreatWaveoffKanagawa.jpeg){#fig-wave}
 
 See @fig-wave for a picture of the study animal. Etiam vitae eros tristique, porta sapien a, aliquet mauris. Praesent ultricies mi nulla, et dignissim nulla mattis at. Fusce rhoncus leo quis odio euismod, hendrerit facilisis risus tincidunt. Aenean at lectus justo. Cras fringilla lacus nisl, ac convallis odio tincidunt vel. Integer vel egestas nisi. Curabitur vitae imperdiet justo.
 

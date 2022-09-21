@@ -1,0 +1,69 @@
+project: 
+  type: website
+  
+website: 
+  page-navigation: true
+  title: "quarto titlepages" 
+  site-url: "https://nmfs-opensci.github.io/quarto_titlepages" 
+  repo-url: "https://github.com/nmfs-opensci/quarto_titlepages"
+  repo-actions: [edit, source, issue]
+  favicon: images/favicon.ico
+  
+  page-footer:
+    right: "This page is built with [Quarto](https://quarto.org/)."
+    left: "&copy; CC-1.0"
+  
+  sidebar:
+    background: "#D9E3E4"
+    logo: "https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png"
+    favicon: images/favicon.ico
+    pinned: true
+    align: center
+    tools: 
+      - icon: globe
+        href: https://nmfs-opensci.github.io
+        text: "NMFS Open Science"
+      - icon: github
+        href: https://github.com/nmfs-opensci
+        text: "NMFS OpenSci"
+
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: 01-about.qmd
+        text: About
+      - href: 02-how-it-works.qmd
+        text: How it works
+      - href: 03-how-to-use.qmd
+        text: How to use
+      - href: 04-how-to-modify.qmd
+        text: How to modify
+      - href: 02-titlepages.qmd
+        text: Source code
+      - href: 05-pandoc-templates.qmd
+        text: Help with Pandoc
+      - href: 06-latex.qmd
+        text: LaTeX structure
+      - href: 07-notes.qmd
+        text: Notes
+      - href: 08-acknowledgements.qmd
+        text: Acknowledgements
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss] 
+      dark: [cosmo, theme-dark.scss]
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+
+
+filters:
+  - include-files.lua
+  - quarto
+
+  
