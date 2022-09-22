@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>quarto titlepages – pandoc-templates</title>
+<title>quarto titlepages v1 – pandoc-templates</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -180,8 +180,8 @@ ul.task-list li input[type="checkbox"] {
 <p><code>$--</code> is a Pandoc comment <code>%</code> is a LaTeX comment</p>
 <section id="comments" class="level2">
 <h2 class="anchored" data-anchor-id="comments">Comments</h2>
-<p>If I want to comment out a line, I use both though maybe <code>$--</code> works.</p>
-<pre><code>% $-- $if(subtitle)$ ... $endif$</code></pre>
+<p>To comment out a line in a pandoc template, use <code>$--</code>.</p>
+<pre><code>$-- this is a comment</code></pre>
 </section>
 <section id="if-statements" class="level2">
 <h2 class="anchored" data-anchor-id="if-statements">If statements</h2>

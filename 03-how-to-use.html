@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>quarto titlepages – how-to-use</title>
+<title>quarto titlepages v1 – how-to-use</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -176,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sec-howtouse" class="level1">
 <h1>How to use</h1>
 <ol type="1">
-<li>Go to <a href="https://github.com/nmfs-opensci/quarto_titlepages">https://github.com/nmfs-opensci/quarto_titlepages</a></li>
+<li>Go to <a href="https://github.com/nmfs-opensci/quarto_titlepages_v1">https://github.com/nmfs-opensci/quarto_titlepages_v1</a></li>
 <li>Open the <code>titlepages</code> folder</li>
 <li>Pick a title page, eg. <code>vline</code> or <code>bg-image</code></li>
 <li>Download (or copy) all the <code>.tex</code> files. Typically this is the <code>before-body.tex</code>, <code>_titlepage.tex</code>, and <code>in-header.tex</code> files, but there may be more. <em>How?</em> Clone the repo or click on “raw” and copy and paste the code into your own file.</li>
@@ -198,11 +198,12 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="book-class-scrbook" class="level2">
 <h2 class="anchored" data-anchor-id="book-class-scrbook">Book class <code>scrbook</code></h2>
-<p>The class option “onepage” makes the margins of the even and odd pages the same. The class option “openany” allows chapters and parts to start on even or odd pages; the default is to only start chapters and parts on odd pages.</p>
+<p>The class option “oneside” makes the margins of the even and odd pages the same. The class option “open=any” allows chapters and parts to start on even or odd pages; the default is to only start chapters and parts on odd pages. Note <code>number-sections: false</code> will not work with <code>scrbook</code>. That’s not the way to get rid of chapter numbers with the <code>scrbook</code> class.</p>
 <pre><code>format:
   pdf:
     documentclass: scrbook
-    classoption: ["onepage", "openany"]
+    classoption: ["oneside", "open=any"]
+    number-sections: true
     template-partials:
       - "template/before-body.tex"
       - "template/_titlepage.tex" 

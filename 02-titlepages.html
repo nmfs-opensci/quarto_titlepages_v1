@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>quarto titlepages – titlepages</title>
+<title>quarto titlepages v1 – titlepages</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -206,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
     lot: true</code></pre>
 <p>For <code>scrbook</code> document class, these class options will make the page margins the same on even and odd pages and allow chapters and parts to start on either even or odd pages.</p>
 <pre><code>    documentclass: scrbook
-    classoption: ["onepage", "openany"]</code></pre>
+    classoption: ["oneside", "open=any"]</code></pre>
 </section>
 <section id="before-body.tex" class="level3">
 <h3 class="anchored" data-anchor-id="before-body.tex"><code>before-body.tex</code></h3>
@@ -389,9 +389,10 @@ $if(cover)$\includegraphics[width=4cm]{$cover$}$endif$
     title-bg-image: "images/corner-bg.png"
     title-bg-location: "UL"
     title-bg-size: 0.5</code></pre>
-<p>For <code>scrbook</code> document class, these class options will make the page margins the same on even and odd pages and allow chapters and parts to start on either even or odd pages.</p>
+<p>For <code>scrbook</code> document class, the class options below will make the page margins the same on even and odd pages and allow chapters and parts to start on either even or odd pages. In addition, you will need to set <code>number-sections: true</code> because Quarto sets this to <code>false</code> and that causes equation numbering to fail. Look up how to turn off chapter and section numbers for the <code>scrbook</code> class if you want to do that.</p>
 <pre><code>    documentclass: scrbook
-    classoption: ["onepage", "openany"]</code></pre>
+    classoption: ["oneside", "open=any"]
+    number-sections: true</code></pre>
 </section>
 <section id="before-body.tex-1" class="level3">
 <h3 class="anchored" data-anchor-id="before-body.tex-1"><code>before-body.tex</code></h3>
