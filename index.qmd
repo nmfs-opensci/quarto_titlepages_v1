@@ -1,10 +1,12 @@
 ---
-title: "quarto titlepages"
+title: "quarto titlepages v1"
 subtitle: "LaTeX title pages with Quarto"
 page-layout: full
 ---
 
-[quarto titlepages](https://github.com/nmfs-opensci/quarto_titlepages) is a collection of Pandoc template partials (Pandoc template + LaTeX) and LaTeX header files to create custom title pages for PDF. It does not require installation of anything. Download (or copy) the `before-body.tex`, `_titlepage.tex`, and `in-header.tex` files for one of the title pages and add them to the pdf format portion of your YAML. See [How to use](03-how-to-use.html)
+[quarto titlepages v1](https://github.com/nmfs-opensci/quarto_titlepages_v1) is a collection of Pandoc template partials (Pandoc template + LaTeX) and LaTeX header files to create custom title pages for PDF. This is not the quarto_titlepages Quarto Extension; that lives [here](https://github.com/nmfs-opensci/quarto_titlepages).
+
+quarto_titlepages_v1 is for LaTeX users who want to DYI their own titlepages, either with a dynamic Pandoc template or with a static titlepage. This does not require installation of anything. Download (or copy) the `before-body.tex`, `_titlepage.tex`, and `in-header.tex` files for one of the title pages and add them to the pdf format portion of your YAML. See [How to use](03-how-to-use.html)
 
 There are two types of title pages. Static does not use the YAML. Modify these if you have a title page written in LaTeX that you want to use. The template title pages (no `-static` at end) will use the YAML variables (authors, affiliations, cover image, etc).
 

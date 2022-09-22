@@ -1,6 +1,6 @@
 # How to use  {#sec-howtouse}
 
-1.  Go to [https://github.com/nmfs-opensci/quarto_titlepages](https://github.com/nmfs-opensci/quarto_titlepages)
+1.  Go to [https://github.com/nmfs-opensci/quarto_titlepages_v1](https://github.com/nmfs-opensci/quarto_titlepages_v1)
 1.  Open the `titlepages` folder
 2.  Pick a title page, eg. `vline` or `bg-image`
 3.  Download (or copy) all the `.tex` files. Typically this is the `before-body.tex`, `_titlepage.tex`, and `in-header.tex` files, but there may be more. *How?* Clone the repo or click on "raw" and copy and paste the code into your own file.
@@ -26,13 +26,14 @@ format:
 
 ## Book class `scrbook`
 
-The class option "onepage" makes the margins of the even and odd pages the same. The class option "openany" allows chapters and parts to start on even or odd pages; the default is to only start chapters and parts on odd pages.
+The class option "oneside" makes the margins of the even and odd pages the same. The class option "open=any" allows chapters and parts to start on even or odd pages; the default is to only start chapters and parts on odd pages. Note `number-sections: false` will not work with `scrbook`. That's not the way to get rid of chapter numbers with the `scrbook` class.
 
 ```
 format:
   pdf:
     documentclass: scrbook
-    classoption: ["onepage", "openany"]
+    classoption: ["oneside", "open=any"]
+    number-sections: true
     template-partials:
       - "template/before-body.tex"
       - "template/_titlepage.tex" 

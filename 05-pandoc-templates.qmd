@@ -8,9 +8,9 @@ Pandoc templating [](https://pandoc.org/MANUAL.html#templates)
 
 ## Comments
 
-If I want to comment out a line, I use both though maybe `$--` works.
+To comment out a line in a pandoc template, use `$--`.
 ```
-% $-- $if(subtitle)$ ... $endif$
+$-- this is a comment
 ```
 
 ## If statements

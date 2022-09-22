@@ -21,7 +21,7 @@ For the purposes of quarto_titlepages, this is all you need to know.
 This specifies the look of your PDF. It is specified by a `.cls` file. Quarto uses by default `scrartcl` and `scrbook`. If you want to customize a document class, you can start with class options. You'll need to dig into the CTAN documentation to see what is available: [scrbook](https://www.ctan.org/pkg/scrbook) and [srcartcl](https://www.ctan.org/pkg/scrartcl).
 
         documentclass: scrbook
-        classoption: ["onepage", "openany"]
+        classoption: ["oneside", "open=any"]
 
 ## include-in-header (static)
 

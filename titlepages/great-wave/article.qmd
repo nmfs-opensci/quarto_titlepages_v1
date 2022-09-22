@@ -15,8 +15,8 @@ editor: source
 format:
   pdf:
     documentclass: scrbook
-    classoption: ["openany"]
-    keep-tex: true
+    classoption: ["oneside", "open=any"]
+    number-sections: true
     hyperrefoptions: 
       - "colorlinks=true"
       - "linkcolor=blue"

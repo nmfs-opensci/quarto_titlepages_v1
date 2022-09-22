@@ -7,7 +7,8 @@ editor: source
 format:
   pdf:
     documentclass: scrbook
-    classoption: ["onepage"]
+    classoption: ["oneside", "open=any"]
+    number-sections: true
     geometry:
       - "margin=1in"
     template-partials:

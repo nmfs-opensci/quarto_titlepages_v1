@@ -3,7 +3,7 @@ project:
   
 website: 
   page-navigation: true
-  title: "quarto titlepages" 
+  title: "quarto titlepages v1" 
   site-url: "https://nmfs-opensci.github.io/quarto_titlepages" 
   repo-url: "https://github.com/nmfs-opensci/quarto_titlepages"
   repo-actions: [edit, source, issue]

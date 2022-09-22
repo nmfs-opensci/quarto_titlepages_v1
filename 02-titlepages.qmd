@@ -28,7 +28,7 @@ For `scrbook` document class, these class options will make the page margins the
 
 ```
     documentclass: scrbook
-    classoption: ["onepage", "openany"]
+    classoption: ["oneside", "open=any"]
 ```
 
 ### `before-body.tex`
@@ -94,11 +94,13 @@ format:
     title-bg-size: 0.5
 ```
 
-For `scrbook` document class, these class options will make the page margins the same on even and odd pages and allow chapters and parts to start on either even or odd pages.
+For `scrbook` document class, the class options below will make the page margins the same on even and odd pages and allow chapters and parts to start on either even or odd pages. In addition, you will need to set `number-sections: true` because Quarto sets this to `false` and that causes equation numbering to fail. Look up how to turn off chapter and section numbers for the `scrbook` class if you want to do that.
+
 
 ```
     documentclass: scrbook
-    classoption: ["onepage", "openany"]
+    classoption: ["oneside", "open=any"]
+    number-sections: true
 ```
 
 ### `before-body.tex`
