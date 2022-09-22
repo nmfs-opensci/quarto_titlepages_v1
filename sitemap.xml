@@ -1,47 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nmfs-opensci.github.io/quarto_titlepages/01-about.html</loc>
-    <lastmod>2022-09-22T00:31:03.623Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/quarto_titlepages_v1/07-notes.html</loc>
+    <lastmod>2022-09-22T00:39:34.643Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/quarto_titlepages/02-titlepages.html</loc>
-    <lastmod>2022-09-22T00:31:04.819Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/quarto_titlepages_v1/03-how-to-use.html</loc>
+    <lastmod>2022-09-22T00:39:35.056Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/quarto_titlepages/index.html</loc>
-    <lastmod>2022-09-22T00:31:05.299Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/quarto_titlepages_v1/02-titlepages.html</loc>
+    <lastmod>2022-09-22T00:39:35.474Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/quarto_titlepages/07-notes.html</loc>
-    <lastmod>2022-09-22T00:31:05.683Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/quarto_titlepages_v1/04-how-to-modify.html</loc>
+    <lastmod>2022-09-22T00:39:35.913Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/quarto_titlepages/03-how-to-use.html</loc>
-    <lastmod>2022-09-22T00:31:06.079Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/quarto_titlepages_v1/index.html</loc>
+    <lastmod>2022-09-22T00:39:36.331Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/quarto_titlepages/04-how-to-modify.html</loc>
-    <lastmod>2022-09-22T00:31:06.455Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/quarto_titlepages_v1/08-acknowledgements.html</loc>
+    <lastmod>2022-09-22T00:39:36.676Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/quarto_titlepages/contributing.html</loc>
-    <lastmod>2022-09-22T00:31:06.851Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/quarto_titlepages_v1/06-latex.html</loc>
+    <lastmod>2022-09-22T00:39:37.091Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/quarto_titlepages/02-how-it-works.html</loc>
-    <lastmod>2022-09-22T00:31:07.231Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/quarto_titlepages_v1/02-how-it-works.html</loc>
+    <lastmod>2022-09-22T00:39:37.462Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/quarto_titlepages/08-acknowledgements.html</loc>
-    <lastmod>2022-09-22T00:31:07.615Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/quarto_titlepages_v1/05-pandoc-templates.html</loc>
+    <lastmod>2022-09-22T00:40:46.933Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/quarto_titlepages/05-pandoc-templates.html</loc>
-    <lastmod>2022-09-22T00:33:03.657Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-opensci.github.io/quarto_titlepages/06-latex.html</loc>
-    <lastmod>2022-09-22T00:33:04.069Z</lastmod>
+    <loc>https://nmfs-opensci.github.io/quarto_titlepages_v1/01-about.html</loc>
+    <lastmod>2022-09-22T00:40:47.307Z</lastmod>
   </url>
 </urlset>
