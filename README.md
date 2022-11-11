@@ -2,7 +2,7 @@
 
 [Documentation](https://nmfs-opensci.github.io/quarto_titlepages_v1/)
 
-tldr; Open the `titlepages` folder, then open the `bg-image` folder, then open `example.qmd`
+tldr; Open the `titlepages` folder, then open the `bg-image` folder, then open `article.qmd`. Scroll to the pdf format section of the yaml. Then open `before-body.tex`. That is what is giving you control of the frontmatter.
 
 This template makes a custom title page using the information in the YAML (from the `xyz.qmd` for an single doc and from `index.qmd` for a [Quarto](https://quarto.org/) book). Note, this is not the quarto_titlepages extension. This repo is for LaTeX users who want to DYI a titlepage with their own Pandoc template partials. The Quarto extension lives here: [Quarto Extension](https://github.com/nmfs-opensci/quarto_titlepages).
 
