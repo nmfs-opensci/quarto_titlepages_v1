@@ -198,7 +198,13 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="for-loops">for loops</h2>
 <p>The basic syntax is <code>$for(mylist)$ ... $sep$ ... $endfor$</code> where the value after <code>$sep$</code> specifies what separates each value in the list. Let’s say in your yaml, you have <code>mylist: ["one", "two", "three"]</code>.</p>
 <pre><code>$for(mylist)${\large{$mylist$}}$sep$ AND $endfor$%</code></pre>
-<p>Would put <code>one AND two AND three</code> in your tex file.</p>
+<p>Would put <code>{\large{one}} AND {\large{two}} AND {\large{three}}</code> in your tex file.</p>
+<p>Two common ways to have lists in your yaml:</p>
+<pre><code>mylist1: ["one", "two", "three"]
+mylist2:
+  - "one"
+  - "two"
+  - "three"</code></pre>
 <p><strong>Authors and affiliations</strong> The <a href="https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/filters/common/authors.lua">Quarto author filter</a> sets up lists of the unique authors and affiliations that you can use. See the <code>title.tex</code> and <code>before-body.tex</code> examples in https://github.com/quarto-journals.</p>
 <pre><code>$for(by-author)$%
 {\large{$by-author.name.literal$}}$sep${\large{ AND }}
