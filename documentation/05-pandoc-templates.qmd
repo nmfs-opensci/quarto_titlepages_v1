@@ -40,7 +40,17 @@ The basic syntax is `$for(mylist)$ ... $sep$ ... $endfor$` where the value after
 ```
 $for(mylist)${\large{$mylist$}}$sep$ AND $endfor$%
 ```
-Would put `one AND two AND three` in your tex file.
+Would put `{\large{one}} AND {\large{two}} AND {\large{three}}` in your tex file.
+
+Two common ways to have lists in your yaml:
+```
+mylist1: ["one", "two", "three"]
+mylist2:
+  - "one"
+  - "two"
+  - "three"
+```
+
 
 **Authors and affiliations** The [Quarto author filter](https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/filters/common/authors.lua) sets up lists of the unique authors and affiliations that you can use. See the `title.tex` and `before-body.tex` examples in https://github.com/quarto-journals.
 
