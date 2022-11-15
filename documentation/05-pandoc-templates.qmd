@@ -35,6 +35,15 @@ since if there is only one author then there is no "allbutlast" value
 
 ## for loops
 
+The basic syntax is `$for(mylist)$ ... $sep$ ... $endfor$` where the value after `$sep$` specifies what separates each value in the list.  Let's say in your yaml, you have `mylist: ["one", "two", "three"]`.
+
+```
+$for(mylist)${\large{$mylist$}}$sep$ AND $endfor$%
+```
+Would put `one AND two AND three` in your tex file.
+
+**Authors and affiliations** The [Quarto author filter](https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/filters/common/authors.lua) sets up lists of the unique authors and affiliations that you can use. See the `title.tex` and `before-body.tex` examples in https://github.com/quarto-journals.
+
 ```
 $for(by-author)$%
 {\large{$by-author.name.literal$}}$sep${\large{ AND }}
@@ -43,9 +52,29 @@ $endfor$%
 
 This is a for loop across all the authors and prints each author name. The `$sep$` bit says what to put between the names. In this case it would be AND. So `Jane Doe AND Ashkar Kumar`
 
+## Include other templates
+
+You can include other files in your template partials. Let's say you have a file called `_titlepage.tex`. You can include it in another template by putting `()` after the name of the file:
+
+```
+$_titlepage.tex()$
+```
+
+Make sure to list the file in your yaml. The `_` in front of the name is just to help you make sure you don't accidentally use one of Pandoc's reserved names (like `title.tex`).
+
+```
+format:
+  pdf:
+    documentclass: scrartcl 
+    number-sections: true
+    template-partials:
+      - "before-body.tex"
+      - "_titlepage.tex" 
+```
+
 ## Number appearances
 
-The Pandoc template can number the author affiliations and will figure the duplicates.
+The Pandoc template can number the author affiliations and will figure the duplicates. 
 
 ```
 $for(by-author)$%
