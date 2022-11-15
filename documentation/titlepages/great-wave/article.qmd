@@ -23,7 +23,6 @@ format:
       - "urlcolor=cyan"
     geometry:
       - "margin=1.5in"
-    number-sections: true
     template-partials:
       - "before-body.tex"
       - "_titlepage.tex" 
