@@ -4,8 +4,8 @@ project:
 website: 
   page-navigation: true
   title: "quarto titlepages v1" 
-  site-url: "https://nmfs-opensci.github.io/quarto_titlepages" 
-  repo-url: "https://github.com/nmfs-opensci/quarto_titlepages"
+  site-url: "https://nmfs-opensci.github.io/quarto_titlepages_v1" 
+  repo-url: "https://github.com/nmfs-opensci/quarto_titlepages_v1"
   repo-actions: [edit, source, issue]
   favicon: images/favicon.ico
   
