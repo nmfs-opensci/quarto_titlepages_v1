@@ -18,6 +18,14 @@ What's the difference? They both are being listed in template-partials in the YA
 -   Passes that template in via `template-partials`. This is needed so that you can reference the YAML variables, things like `author`.
 -   Specifies the extra things (packages) that are needed for the LaTeX header in `in-header.tex`.
 
+## Adding an abstract to my frontmatter
+
+This applies to front matter of any other type of front matter like preface or copyright page.
+
+This is happening in the `before-body.tex` template partial. Adding `abstract: ` to your Quarto yml won't do anything because that would normally be in `before-body.tex`. You need to add your abstract to `before-body.tex`. There are many ways you might do this and it depends on the format of what you are producting. An article is different than a book is different than a thesis.
+
+See the `before-body.tex` file in `titlepages/academic-static` to see one way that you can add your abstract.
+
 ## The YAML - example
 
     format:
