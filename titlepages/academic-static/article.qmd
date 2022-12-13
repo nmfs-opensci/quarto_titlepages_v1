@@ -1,8 +1,9 @@
 ---
-title: Not used
+title: An Unnecessarily Convoluted Academic Title
 subtitle: Not used
+abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque ex, vehicula dictum risus fermentum, feugiat faucibus neque. Etiam purus quam, lacinia vel porta in, malesuada ac nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed bibendum placerat tellus, ac finibus lectus euismod eget.
 author:
-  - name: Not used
+  - name: Not used; hard-coded into _titlepage.tex
 editor: source
 format:
   pdf:
