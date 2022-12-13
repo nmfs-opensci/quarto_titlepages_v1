@@ -27,7 +27,7 @@ editor: source
 format:
   pdf:
     documentclass: scrbook
-    classoption: ["onepage", "openany"]
+    classoption: ["oneside", "open=any"]
     template-partials:
       - "before-body.tex"
       - "_titlepage.tex" 
