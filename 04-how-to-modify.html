@@ -164,6 +164,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#modifying-pandoc-templates-sounds-like-fun" id="toc-modifying-pandoc-templates-sounds-like-fun" class="nav-link" data-scroll-target="#modifying-pandoc-templates-sounds-like-fun">Modifying Pandoc templates sounds like fun!!</a></li>
   <li><a href="#are-you-kidding-me" id="toc-are-you-kidding-me" class="nav-link" data-scroll-target="#are-you-kidding-me">Are you kidding me?</a></li>
   <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works">How it works</a></li>
+  <li><a href="#adding-an-abstract-to-my-frontmatter" id="toc-adding-an-abstract-to-my-frontmatter" class="nav-link" data-scroll-target="#adding-an-abstract-to-my-frontmatter">Adding an abstract to my frontmatter</a></li>
   <li><a href="#the-yaml---example" id="toc-the-yaml---example" class="nav-link" data-scroll-target="#the-yaml---example">The YAML - example</a></li>
   <li><a href="#what-is-going-on" id="toc-what-is-going-on" class="nav-link" data-scroll-target="#what-is-going-on">What is going on:</a></li>
   </ul></li>
@@ -194,6 +195,12 @@ ul.task-list li input[type="checkbox"] {
 <li>Passes that template in via <code>template-partials</code>. This is needed so that you can reference the YAML variables, things like <code>author</code>.</li>
 <li>Specifies the extra things (packages) that are needed for the LaTeX header in <code>in-header.tex</code>.</li>
 </ul>
+</section>
+<section id="adding-an-abstract-to-my-frontmatter" class="level2">
+<h2 class="anchored" data-anchor-id="adding-an-abstract-to-my-frontmatter">Adding an abstract to my frontmatter</h2>
+<p>This applies to front matter of any other type of front matter like preface or copyright page.</p>
+<p>This is happening in the <code>before-body.tex</code> template partial. Adding <code>abstract:</code> to your Quarto yml won’t do anything because that would normally be in <code>before-body.tex</code>. You need to add your abstract to <code>before-body.tex</code>. There are many ways you might do this and it depends on the format of what you are producting. An article is different than a book is different than a thesis.</p>
+<p>See the <code>before-body.tex</code> file in <code>titlepages/academic-static</code> to see one way that you can add your abstract.</p>
 </section>
 <section id="the-yaml---example" class="level2">
 <h2 class="anchored" data-anchor-id="the-yaml---example">The YAML - example</h2>
